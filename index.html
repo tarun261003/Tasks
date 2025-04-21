@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side by Side Menu & Sliding Navbar</title>
+   <link rel="stylesheet" href="./styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left: Menu + Logo -->
+        <div class="left-section">
+            <div class="menu-container">
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    
+                </div>
+                <span class="text">Navigator</span>
+            </div>
+            
+            <div class="logo">
+                <img src="./Assests/image-removebg-preview.png" alt="Endava Logo">
+            </div>
+        </div>
+    
+        <!-- Right: Profile Icons -->
+        <div class="profile">
+            <img src="./Assests/home.svg" alt="Home" class="icon">
+            <i class="fa fa-star-o icon" style="font-size:24px;color:#E06A4D;"></i>
+            <img src="./Assests/icons8-flag-50.svg" alt="Flag" class="icon">
+            <img src="./Assests/bell.svg" alt="Notifications" class="icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="Profile Picture" class="profile-pic">
+            <!-- <span>Profile Picture</span> -->
+        </div>
+    </div>
+    
+
+<!-- Time Container with Greeting and Navbar -->
+<div class="time-container" id="timeContainer">
+    <p id="greeting"></p>
+
+    <!-- Sliding Navbar -->
+    <div class="navbar-container">
+        <div class="arrow" id="leftArrow">❮</div>
+
+        <div class="nav-bar" id="navBar">
+          <div class="nav-content" id="navContent">
+            <div class="nav-item">Me</div>
+            <div class="nav-item">My Team</div>
+            <div class="nav-item">My Client Groups</div>
+            <div class="nav-item">Sales</div>
+            <div class="nav-item">Contract Management</div>
+            <div class="nav-item">Receivables</div>
+            <div class="nav-item">Reports</div>
+            <div class="nav-item">Settings</div>
+            <div class="nav-item">User</div>
+            <div class="nav-item">Client</div>
+            <div class="nav-item">Tarun</div>
+            <div class="nav-item">Css</div>
+          </div>
+        </div>
+
+        <div class="arrow" id="rightArrow">❯</div>
+      </div>
+      <div class="slider-line">
+        <div class="slider-progress" id="sliderProgress"></div>
+      </div>
+    <!-- Quick Actions & Apps Section -->
+<div class="main-grid">
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+      <h3>Quick Actions</h3>
+      <div class="action-items">
+        <div class="action">
+          <i class="fa fa-user icon-large"></i>
+          <span>Personal Details</span>
+        </div>
+        <div class="action">
+          <i class="fa fa-file-text icon-large"></i>
+          <span>Document Records</span>
+        </div>
+        <div class="action">
+          <i class="fa fa-id-card icon-large"></i>
+          <span>Identification Info</span>
+        </div>
+        <div class="action">
+          <i class="fa fa-envelope icon-large"></i>
+          <span>Contact Info</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Apps -->
+    <div class="apps">
+      <h3>Apps</h3>
+      <div class="app-grid">
+        <div class="app-card">
+          <i class="fa fa-sitemap icon-large"></i>
+          <span>Directory</span>
+        </div>
+       <a href="./test.html" style="text-decoration: none; color: inherit;">
+         <div class="app-card">
+          <i class="fa fa-calendar icon-large"></i>
+          <span>Time and Absences</span>
+        </div>
+       </a>
+        <div class="app-card">
+          <i class="fa fa-user-circle icon-large"></i>
+          <span>Personal Information</span>
+        </div>
+        <div class="app-card">
+          <i class="fa fa-credit-card icon-large"></i>
+          <span>Payroll</span>
+        </div>
+        <div class="app-card">
+          <i class="fa fa-plane icon-large"></i>
+          <span>Travel & Expenses</span>
+        </div>
+        <div class="app-card">
+          <i class="fa fa-clock-o icon-large"></i>
+          <span>Working Hours</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</body>
+<script src="./script.js"></script>
+</html>
