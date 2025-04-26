@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #de5a2f;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.header-text {
+    margin-left: 20px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-text p {
+    margin: 5px 0 0;
+}
+
+.buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.submit-btn, .cancel-btn {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: white;
+    color: #d35400;
+}
+
+.cancel-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.form-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 28%;
+    border-radius: 8px;
+    width: 50%;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.info-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #de874e;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+h2 {
+    color: #e4a173;
+}

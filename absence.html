@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Absence</title>
+    <link rel="stylesheet" href="./css/stylesab.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header">
+    <div class="header-text">
+        <h1>Add Absence</h1>
+        <p>Tarun Mangalampalli</p>
+    </div>
+    <div class="buttons">
+        <button class="submit-btn">Submit</button>
+        <button class="cancel-btn">Cancel</button>
+    </div>
+</div>
+
+<!-- Form Section -->
+<div class="form-section">
+    <label for="type">* Type</label>
+    <select id="type" name="type">
+        <option value="">Select a value</option>
+        <option value="casual">Casual Leave Karnataka IN</option>
+    </select>
+</div>
+
+<!-- WHEN Card (Initially hidden) -->
+<div class="form-section" id="when-section" style="display: none;">
+    <h2>When</h2>
+    <label for="start-date">* Start Date</label>
+    <input type="date" id="start-date">
+    <p>Scheduled start time is 9:00 AM</p>
+
+    <label for="end-date">* End Date</label>
+    <input type="date" id="end-date">
+    <p>Scheduled end time is 5:00 PM</p>
+
+    <div style="margin-top: 20px;">
+        <strong>Absence Duration:</strong> <span id="duration">0</span> Hours
+    </div>
+</div>
+
+<script src="./js/scriptab.js"></script>
+
+</body>
+</html>
