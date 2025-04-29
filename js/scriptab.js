@@ -4,6 +4,11 @@ const startDateInput = document.getElementById("start-date");
 const endDateInput = document.getElementById("end-date");
 const durationSpan = document.getElementById("duration");
 
+// Default: start and end date same
+startDateInput.valueAsDate = new Date();
+endDateInput.valueAsDate = new Date();
+calculateHours(); // Initial calculation
+
 typeSelect.addEventListener("change", () => {
   if (typeSelect.value !== "") {
     whenSection.style.display = "block";
@@ -35,7 +40,6 @@ function calculateHours() {
     tempDate.setDate(startDate.getDate() + i);
     const day = tempDate.getDay();
     if (day !== 0 && day !== 6) {
-      // Not Sunday(0) or Saturday(6)
       workdays++;
     }
   }
