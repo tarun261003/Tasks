@@ -17,7 +17,7 @@ typeSelect.addEventListener("change", () => {
   }
 });
 
-// Calculate hours when date changes
+// Event Listeners for change in date inputs
 [startDateInput, endDateInput].forEach((input) => {
   input.addEventListener("change", calculateHours);
 });

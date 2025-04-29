@@ -6,7 +6,19 @@ body {
     margin: 0;
     padding: 0;
 }
+.left-arrow {
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
 
+.left-arrow:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
 .header {
     background-color: #de5a2f;
     color: white;
